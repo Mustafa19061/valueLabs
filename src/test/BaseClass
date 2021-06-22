@@ -17,7 +17,7 @@ import java.net.URL;
 
 public class BaseClass {
 
-
+    public static final String URL = "http://127.0.0.1:4723/wd/hub";
     AppiumDriver<MobileElement> driver = null;
 
     @BeforeTest(alwaysRun = true)
@@ -35,6 +35,7 @@ public class BaseClass {
 		caps.setCapability("appPackage", "com.Android.SauceLabs.Mobile.Sample.app");
 		caps.setCapability(MobileCapabilityType.APP, "D:\\Work\\Selenium\\Appium\\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk");
 		caps.setCapability("appActivity", ".MainActivity");
+		driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 
 
         }catch (Exception exp)
