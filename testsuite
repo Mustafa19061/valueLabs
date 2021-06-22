@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AndroidTestSuite" verbose="1" parallel="tests" thread-count="2">
+
+    <test name="testOne">
+        <parameter name="udid" value="RZ8M31YPAQX"/>
+        <parameter name="deviceName" value="Samsung S10"/>
+        <parameter name="appiumPort" value="4725"/>
+        <parameter name="adbPort" value="5040"/>
+        <parameter name="systemPort" value="8200"/>
+        <parameter name="platformVersion" value="10.0"/>
+        <classes>
+            <class name="com.testautomation.valueLabs.SwagLabs" />
+        </classes>
+    </test>
+    <test name="testTwo">
+        <parameter name="udid" value="94HAY0PN0J"/>
+        <parameter name="deviceName" value="Pixel3"/>
+        <parameter name="appiumPort" value="4727"/>
+        <parameter name="adbPort" value="5050"/>
+        <parameter name="systemPort" value="8250"/>
+        <parameter name="platformVersion" value="10.0"/>
+        <classes>
+            <class name="com.testautomation.valueLabs.SwagLabs" />
+        </classes>
+    </test>
+
+</suite>
