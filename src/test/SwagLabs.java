@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class SauceLabs extends  BaseClass  {
+public class SwagLabs extends  BaseClass  {
 
 	 @Test
     public void testOne() throws InterruptedException {
