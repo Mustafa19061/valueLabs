@@ -55,11 +55,11 @@ public class SauceLabs {
 
 	    //Adding selected product to cart
 	    driver.findElement(By.xpath("//android.sauceLabs.Cart[@id='Add to Cart']")).click();
-	    Thread.sleep(3000);
+	  
 
 	    //Checking product is available in cart or not
 	    driver.findElement(By.xpath("//android.sauceLabs.Cart[@class='cart-label']")).click();
-	    Thread.sleep(5000);
+	  
 			
 		//Close all the browsers
 		driver.quit();
